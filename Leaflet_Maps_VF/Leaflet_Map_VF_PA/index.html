@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Phoenix Area</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/leaflet.css" />
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+<link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+
+
+<body>
+<div id="option">
+    <input name="Add Points Button" type="button" class="button1" value="Add Businesses to Map" onclick="addtoMap()" />
+  </div>
+
+  <div id="option">
+    <input name="Clear Map Button" type="button" class="button2" value="Clear Businesses from Map" onclick="clearMap()" />
+  </div>
+
+<div id="option">
+    <input name="Recommender" type="button" class="button1" value="Make Recommendations" onclick="recommender($('input.typeahead.tt-input').val())" />
+  </div>
+
+ <div id="option">
+    <input name="Clear Recommender"  type="button" class="button2" value="Clear Recommendations from Map" onclick="clearMapRecommender()" />
+  </div>
+
+ <div class="form" id="the-basics">
+    <input class="typeahead" type="text" placeholder="Business Type">
+  </div>
+
+
+<div id="business" class="tablecss">
+  Businesses Now Displayed on Map:
+
+  <table id="businesstypes">
+  <table>
+</div>
+
+<div id="map"></div>
+
+ 
+
+  
+
+
+
+  <!-- page content -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/d3.v4.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
+  <script src="js/leaflet.awesome-markers.js"></script>
+  <script src="js/typeahead.bundle.js"></script>
+  <script src="js/typeahead.bundle.min.js"></script>
+  <script src="js/typeahead.jquery.js"></script>
+  <script src="js/typeahead.jquery.min.js"></script>
+  <script src="js/bloodhound.js"></script>
+  <script src="js/bloodhound.min.js"></script>
+  <script src="js/yelp_viz.js"></script>
+
+
+
+
+
+</body>
+
+</html>
